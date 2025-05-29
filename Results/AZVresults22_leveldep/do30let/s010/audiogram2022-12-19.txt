@@ -1,0 +1,154 @@
+Audiogram (práh detekce tónu, pulsu, šumu)
+--Pacient:-----------
+
+--Narozen:-----------
+
+--RÈ:----------------
+
+--ZP:----------------
+
+--Bydlištì:----------
+--Telefon:-----------
+
+--Jiné:--------------
+--Datum:-------------
+19.12.2022
+--Vyšetøující:-------
+
+--Oddìlovaè:---------
+.
+--Poznámka:----------
+--Práh L:------------
+500	5.8209	-1.7791	nedef	nedef
+1000	3.3386	0.63862	nedef	nedef
+2000	-4.709	-5.209	nedef	nedef
+4000	-7.1481	-7.2481	nedef	nedef
+8000	25.4981	2.3981	nedef	nedef
+--Práh P:------------
+500	4.877	-2.723	nedef	nedef
+1000	-7.3	-10	nedef	nedef
+2000	-9.2489	-9.7489	nedef	nedef
+4000	-4.1038	-4.2038	nedef	nedef
+8000	13.1	-10	nedef	nedef
+--Parametry:---------
+Délka [ms]
+   500
+Nábìh [ms]
+   10
+Binaurálnì, obì uši souèasnì
+   ne
+Pozadí
+   bez pozadí
+Interstimulus interval [s]
+   3
+--Formát:------------
+frekvence     dB_SPL     dB_HL     latence     dB_SPL_mask     dB_HL_mask
+--Data L:------------
+1000	       52.7	         50	    0.78743	      nedef	      nedef
+1000	       27.7	         25	   0.831012	      nedef	      nedef
+1000	        7.7	          5	    1.00175	      nedef	      nedef
+1000	       -2.3	         -5	         -1	      nedef	      nedef
+1000	        2.7	          0	         -1	      nedef	      nedef
+1000	        7.7	          5	   0.970908	      nedef	      nedef
+1000	       -2.3	         -5	         -1	      nedef	      nedef
+1000	        2.7	          0	    1.31828	      nedef	      nedef
+1000	       -7.3	        -10	         -1	      nedef	      nedef
+1000	       -2.3	         -5	         -1	      nedef	      nedef
+1000	        2.7	          0	         -1	      nedef	      nedef
+1000	        7.7	          5	    1.81068	      nedef	      nedef
+2000	       50.5	         50	   0.736416	      nedef	      nedef
+2000	       25.5	         25	   0.878677	      nedef	      nedef
+2000	        5.5	          5	   0.905652	      nedef	      nedef
+2000	       -4.5	         -5	    1.32733	      nedef	      nedef
+2000	       -9.5	        -10	  0.0001642	      nedef	      nedef
+2000	       -4.5	         -5	         -1	      nedef	      nedef
+2000	        0.5	          0	    1.39609	      nedef	      nedef
+2000	       -9.5	        -10	         -1	      nedef	      nedef
+2000	       -4.5	         -5	         -1	      nedef	      nedef
+2000	        0.5	          0	    1.53063	      nedef	      nedef
+2000	       -9.5	        -10	         -1	      nedef	      nedef
+2000	       -4.5	         -5	         -1	      nedef	      nedef
+2000	        0.5	          0	    0.77492	      nedef	      nedef
+4000	       50.1	         50	   0.610223	      nedef	      nedef
+4000	       25.1	         25	    1.07948	      nedef	      nedef
+4000	        5.1	          5	    1.65458	      nedef	      nedef
+4000	       -4.9	         -5	     1.0669	      nedef	      nedef
+4000	       -9.9	        -10	         -1	      nedef	      nedef
+4000	       -4.9	         -5	   0.820504	      nedef	      nedef
+4000	        0.1	          0	   0.854526	      nedef	      nedef
+4000	       -9.9	        -10	         -1	      nedef	      nedef
+4000	       -4.9	         -5	   0.916168	      nedef	      nedef
+4000	       -9.9	        -10	         -1	      nedef	      nedef
+4000	       -4.9	         -5	   0.855661	      nedef	      nedef
+8000	       73.1	         50	   0.679964	      nedef	      nedef
+8000	       48.1	         25	   0.550191	      nedef	      nedef
+8000	       28.1	          5	         -1	      nedef	      nedef
+8000	       33.1	         10	   0.545297	      nedef	      nedef
+8000	       23.1	          0	         -1	      nedef	      nedef
+8000	       28.1	          5	   0.911725	      nedef	      nedef
+8000	       18.1	         -5	         -1	      nedef	      nedef
+8000	       23.1	          0	    1.69963	      nedef	      nedef
+8000	       13.1	        -10	         -1	      nedef	      nedef
+8000	       18.1	         -5	         -1	      nedef	      nedef
+8000	       23.1	          0	         -1	      nedef	      nedef
+8000	       28.1	          5	    1.23807	      nedef	      nedef
+500	       57.6	         50	    1.36471	      nedef	      nedef
+500	       32.6	         25	   0.674104	      nedef	      nedef
+500	       12.6	          5	   0.717641	      nedef	      nedef
+500	        2.6	         -5	         -1	      nedef	      nedef
+500	        7.6	          0	    1.42204	      nedef	      nedef
+500	        2.6	         -5	    3.45862	      nedef	      nedef
+500	       -2.4	        -10	         -1	      nedef	      nedef
+500	        2.6	         -5	         -1	      nedef	      nedef
+500	        7.6	          0	         -1	      nedef	      nedef
+500	       12.6	          5	    1.43964	      nedef	      nedef
+--Data P:------------
+1000	       52.7	         50	   0.615411	      nedef	      nedef
+1000	       27.7	         25	   0.536642	      nedef	      nedef
+1000	        7.7	          5	     1.1107	      nedef	      nedef
+1000	       -2.3	         -5	         -1	      nedef	      nedef
+1000	        2.7	          0	    1.26769	      nedef	      nedef
+1000	       -7.3	        -10	    2.81512	      nedef	      nedef
+1000	       -7.3	        -10	   0.348263	      nedef	      nedef
+1000	       -7.3	        -10	         -1	      nedef	      nedef
+1000	       -2.3	         -5	    2.71701	      nedef	      nedef
+2000	       50.5	         50	   0.569567	      nedef	      nedef
+2000	       25.5	         25	    0.65952	      nedef	      nedef
+2000	        5.5	          5	   0.648137	      nedef	      nedef
+2000	       -4.5	         -5	   0.926204	      nedef	      nedef
+2000	       -9.5	        -10	    1.37706	      nedef	      nedef
+2000	       -4.5	         -5	   0.418434	      nedef	      nedef
+2000	       -9.5	        -10	         -1	      nedef	      nedef
+2000	       -9.5	        -10	         -1	      nedef	      nedef
+2000	       -4.5	         -5	     2.5952	      nedef	      nedef
+4000	       50.1	         50	   0.641264	      nedef	      nedef
+4000	       25.1	         25	   0.585713	      nedef	      nedef
+4000	        5.1	          5	   0.654193	      nedef	      nedef
+4000	       -4.9	         -5	         -1	      nedef	      nedef
+4000	        0.1	          0	  0.0001418	      nedef	      nedef
+4000	       -9.9	        -10	         -1	      nedef	      nedef
+4000	       -4.9	         -5	    2.24877	      nedef	      nedef
+4000	       -9.9	        -10	         -1	      nedef	      nedef
+4000	       -4.9	         -5	         -1	      nedef	      nedef
+4000	        0.1	          0	   0.987397	      nedef	      nedef
+8000	       73.1	         50	    1.20181	      nedef	      nedef
+8000	       48.1	         25	   0.721401	      nedef	      nedef
+8000	       28.1	          5	   0.916927	      nedef	      nedef
+8000	       18.1	         -5	   0.702414	      nedef	      nedef
+8000	       13.1	        -10	    1.40239	      nedef	      nedef
+8000	       18.1	         -5	    1.04334	      nedef	      nedef
+8000	       13.1	        -10	         -1	      nedef	      nedef
+8000	       18.1	         -5	    2.23163	      nedef	      nedef
+500	       57.6	         50	   0.720832	      nedef	      nedef
+500	       32.6	         25	   0.718047	      nedef	      nedef
+500	       12.6	          5	   0.829798	      nedef	      nedef
+500	        2.6	         -5	    1.60362	      nedef	      nedef
+500	       -2.4	        -10	         -1	      nedef	      nedef
+500	       -2.4	        -10	         -1	      nedef	      nedef
+500	        2.6	         -5	         -1	      nedef	      nedef
+500	        7.6	          0	         -1	      nedef	      nedef
+500	       12.6	          5	   0.767975	      nedef	      nedef
+500	        2.6	         -5	    1.31537	      nedef	      nedef
+500	       -2.4	        -10	         -1	      nedef	      nedef
+500	        2.6	         -5	         -1	      nedef	      nedef
+500	        7.6	          0	      1.312	      nedef	      nedef
