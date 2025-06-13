@@ -6,10 +6,10 @@ Created on Sat Mar 30 20:30:57 2024
 Create a graph showing the modulation index showing the amplitude fluctuations in the model outputs and how it changes across levels.
 The graphs shows fluctuations calculated in 200-ms long time frames
 
-Fig. 12 in the paper
+Fig. 13 in the paper
 
 
-@author: vencov
+@author: vaclav.vencovsky, vaclav.vencovsky@gmail.com
 """
 
 
@@ -315,6 +315,20 @@ for j in range(2):
         if i>0:
             ax[j,i].set_yticklabels('')
 
+for axs in ax.flatten():
+    axs.tick_params(axis='both', which='major', width=0.5, length=2)
+    axs.tick_params(axis='both', which='minor', width=0.5, length=1)
+for axs in ax.flatten():
+    axs.grid(True, which='major', linestyle='-', linewidth=0.3, alpha=0.7)
+    axs.grid(True, which='minor', linestyle=':', linewidth=0.2, alpha=0.5)
+    axs.minorticks_on()
+
+plt.rcParams["xtick.direction"]="in"
+plt.rcParams["ytick.direction"]="in"
+plt.rcParams["xtick.top"]=True
+plt.rcParams["ytick.right"]=True
+
+
 
 
 fig.supxlabel('Frequency (kHz)')
@@ -328,4 +342,5 @@ plt.gcf().text(0.5, 0.9, 'Higher gain, 200-ms window', fontsize=8, fontweight='b
 
 
 
-plt.savefig('Figures/MIg10w200ms.eps', format='eps')
+plt.savefig('Figures/MIg10w200ms.png', format='png',dpi=300)
+

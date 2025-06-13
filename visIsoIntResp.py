@@ -9,7 +9,7 @@ numerical solution of the cochlear model
 Figure in the appendix, Fig. 2A
 
 
-@author: vencov
+@author: Vaclav Vencovsky, vaclav.vencovsky@gmail.com
 
 
 """

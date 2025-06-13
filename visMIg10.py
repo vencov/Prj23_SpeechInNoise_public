@@ -6,9 +6,9 @@ Created on Sat Mar 30 20:30:57 2024
 Create a graph showing the modulation index showing the amplitude fluctuations in the model outputs and how it changes across levels.
 The graphs shows fluctuations calculated in 50-ms long time frames
 
-Fig. 11 in the paper
+Fig. 12 in the paper
 
-@author: vencov
+@author: Vaclav Vencovsky, vaclav.vencovsky@gmail.com
 """
 
 
@@ -312,9 +312,25 @@ fig.supxlabel('Frequency (kHz)')
 fig.supylabel('$m/m_{30}$ (-)')
 #plt.ylabel('ddd')
 
+
+for axs in ax.flatten():
+    axs.tick_params(axis='both', which='major', width=0.5, length=2)
+    axs.tick_params(axis='both', which='minor', width=0.5, length=1)
+for axs in ax.flatten():
+    axs.grid(True, which='major', linestyle='-', linewidth=0.3, alpha=0.7)
+    axs.grid(True, which='minor', linestyle=':', linewidth=0.2, alpha=0.5)
+    axs.minorticks_on()
+
+plt.rcParams["xtick.direction"]="in"
+plt.rcParams["ytick.direction"]="in"
+plt.rcParams["xtick.top"]=True
+plt.rcParams["ytick.right"]=True
+
+
+
 handles, labels = ax[1,4].get_legend_handles_labels()
 #labels = ('40','50','60','70','80','90',)
 fig.legend(handles, labels, loc='upper right', ncol= 1,fontsize=8)
 plt.gcf().text(0.5, 0.9, 'Higher gain, 50-ms window', fontsize=8, fontweight='bold',ha='center')
 
-plt.savefig('Figures/MIg10w50ms.eps', format='eps')
+plt.savefig('Figures/MIg10w50ms.png', format='png',dpi=600)

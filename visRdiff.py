@@ -8,7 +8,7 @@ for the model with higher gain and for the model with lower gain
 Figs. 8 and 9 in the paper
 
 
-@author: vencov
+@author: Vaclav Vencovsky, vaclav.vencovsky@gmail.com
 """
 
 import scipy.io
@@ -214,12 +214,16 @@ dxc10m = xc10m10 - xc10m9
 
 
 # draw graphs
+
+#%% 5% quantiles
 plt.close('all')  # close all previous figures
 
 cm = 1/2.54  # centimeters in inches
 y1 = -0.2
 y2 = 0.3
 fig,ax = plt.subplots(2,5,figsize=(20*cm,10*cm))
+
+
 for i in range(10):
     ax[0,0].plot(L1,dxc1q[:,i], label=str(i)), ax[0,0].set_ylim((y1,y2))
     ax[0,1].plot(L1,dxc2q[:,i], label=str(i)), ax[0,1].set_ylim((y1,y2))
@@ -272,13 +276,32 @@ fig.supxlabel('Level (dB SPL)')
 fig.supylabel('$\Delta r$ (-)')
 #plt.ylabel('ddd')
 
-plt.savefig('Figures/drconvG9q.eps', format='eps')
+for axs in ax.flatten():
+    axs.tick_params(axis='both', which='major', width=0.5, length=2)
+    axs.tick_params(axis='both', which='minor', width=0.5, length=1)
+for axs in ax.flatten():
+    axs.grid(True, which='major', linestyle='-', linewidth=0.3, alpha=0.7)
+    axs.grid(True, which='minor', linestyle=':', linewidth=0.2, alpha=0.5)
+    axs.minorticks_on()
 
+plt.rcParams["xtick.direction"]="in"
+plt.rcParams["ytick.direction"]="in"
+plt.rcParams["xtick.top"]=True
+plt.rcParams["ytick.right"]=True
+
+
+
+plt.savefig('Figures/drconvG9q.png', format='png',dpi=600)
+
+
+#%% mean values
 
 cm = 1/2.54  # centimeters in inches
 y1 = -0.05
 y2 = 0.15
 fig,ax = plt.subplots(2,5,figsize=(20*cm,10*cm))
+
+
 for i in range(10):
     ax[0,0].plot(L1,dxc1m[:,i], label=str(i)), ax[0,0].set_ylim((y1,y2))
     ax[0,1].plot(L1,dxc2m[:,i], label=str(i)), ax[0,1].set_ylim((y1,y2))
@@ -339,4 +362,20 @@ fig.supxlabel('Level (dB SPL)')
 fig.supylabel('$\Delta r$ (-)')
 #plt.ylabel('ddd')
 
-plt.savefig('Figures/drconvG9m.eps', format='eps')
+
+for axs in ax.flatten():
+    axs.tick_params(axis='both', which='major', width=0.5, length=2)
+    axs.tick_params(axis='both', which='minor', width=0.5, length=1)
+for axs in ax.flatten():
+    axs.grid(True, which='major', linestyle='-', linewidth=0.3, alpha=0.7)
+    axs.grid(True, which='minor', linestyle=':', linewidth=0.2, alpha=0.5)
+    axs.minorticks_on()
+
+
+plt.rcParams["xtick.direction"]="in"
+plt.rcParams["ytick.direction"]="in"
+plt.rcParams["xtick.top"]=True
+plt.rcParams["ytick.right"]=True
+
+
+plt.savefig('Figures/drconvG9m.png', format='png',dpi=600)

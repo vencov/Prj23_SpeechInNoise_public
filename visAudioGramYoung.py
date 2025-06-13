@@ -4,11 +4,12 @@
 Created on Tue Aug 27 14:30:59 2024
 
 Shows auditory thresholds in dB SPL for young group of listeners used in the study
-Fig. 1 in the paper
+Fig. 3 in the paper
 
-@author: vencov
+
+
+@author: Vaclav Vencovsky, vaclav.vencovsky@gmail.com
 """
-
 
 import scipy.io
 import numpy as np
@@ -17,7 +18,6 @@ from scipy import interpolate
 import codecs
     
 plt.close('all')
-
 
 # find all files with results from babble experiment
 
@@ -82,6 +82,12 @@ ax.set_xticks((500,1000,2000,4000,8000))
 ax.set_xticklabels((0.500,1,2,4,8))
 
 
+plt.rcParams["xtick.direction"]="in"
+plt.rcParams["ytick.direction"]="in"
+plt.rcParams["xtick.top"]=True
+plt.rcParams["ytick.right"]=True
+
+
 
 ax.legend(('Left ear','Right ear'),fontsize=12)
 
@@ -89,4 +95,4 @@ ax.set_xlabel('Frequency (kHz)',fontsize=12)
 
 ax.set_ylabel('Threshold (dB SPL)',fontsize=12)
 plt.gcf().subplots_adjust(bottom=0.15)
-plt.savefig('Figures/AudThresholdYoung.eps', format='eps')
+plt.savefig('Figures/AudThresholdYoung.png', format='png',dpi=600)

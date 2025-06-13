@@ -10,7 +10,7 @@ two variants of the model gain: g10, g9
 
 Fig. A1 in the paper
 
-@author: vencov
+@author: Vaclav Vencovsky, vaclav.vencovsky@gmail.com
 """
 
 

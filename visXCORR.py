@@ -5,9 +5,9 @@ Created on Fri Jan 27 13:53:41 2023
 
 Create a graph showing the cross-correlation for each time frame for one sentence.
 
-Fig. 10 in the paper
+Fig. 11 in the paper
 
-@author: vencov
+@author: Vaclav Vencovsky, vaclav.vencovsky@gmail.com
 """
 
 import scipy.io
@@ -149,5 +149,5 @@ plt.gcf().text(0.9, 0.95, 'Lower gain', fontsize=8, fontweight='bold',ha='center
 ax2.legend(('30','50','70','90 dB SPL'),loc='upper center', bbox_to_anchor=(0,1.1),
           ncol=4,fancybox=True,shadow=True)
 
-plt.savefig('Figures/xcorr.png', format='png')
+plt.savefig('Figures/xcorr.png', format='png',dpi=600)
 
